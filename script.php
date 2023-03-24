@@ -49,7 +49,7 @@ if(isset($_POST['register_btn']))
 
     // check if e-mail already exist
     $check_email_query = "SELECT email FROM users WHERE email='$email' LIMIT 1";
-    $check_email_query_run = mysqli_query($con, $check_email_query);
+    $check_email_query_run = mysqli_query($conn, $check_email_query);
     
     if(mysqli_num_rows($check_email_query_run) > 0)
     {
@@ -61,7 +61,7 @@ if(isset($_POST['register_btn']))
     } else {
         //Resgister user information
         $query = "INSERT INTO users (username, email, password, verify_token) VALUES ('$username','$email','$pw', '$verify_token')";
-        $query_run = mysqli_query($con, $query);
+        $query_run = mysqli_query($conn, $query);
 
         if($query_run){
             sendemail_verify("$username","$email","$verify_token");

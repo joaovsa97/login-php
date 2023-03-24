@@ -1,5 +1,5 @@
 <?php
 
-$con = mysqli_connect("localhost", "root", "", "php-registration")
+$conn = mysqli_connect("localhost", "root", "", "php-registration")
 
 ?>
