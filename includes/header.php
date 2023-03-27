@@ -10,4 +10,9 @@
     </title>
 </head>
 <body>
-    
+    <div class="navbar">
+        <a href="index.php">Home</a>
+        <a href="login.php">Login</a>
+        <a href="register.php">Sign Up</a>
+        <a href="dashboard.php">Dashboard</a>
+    </div>

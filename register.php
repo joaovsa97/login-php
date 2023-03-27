@@ -12,7 +12,7 @@ include('includes/header.php');
         }
             ?>
     </div>
-    <h2>Register your account</h2>
+    <h2 class="title">Register your account</h2>
     <form action="script.php" method="POST">
         <label for="username">Username:</label>
         <input type="text" placeholder="Your username" name="username">

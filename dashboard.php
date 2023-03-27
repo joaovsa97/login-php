@@ -2,7 +2,13 @@
 $page_title = "Dashboard";
 include('includes/header.php');
 require('dbcon.php');
+?>
 
+
+<div class="container">
+        <h1 class="title">Dashboard</h1>
+
+<?php
 //GET data from database for exibition
 $query = "SELECT * FROM users";
 $query_exec = mysqli_query($conn, $query);
@@ -10,9 +16,6 @@ $query_exec = mysqli_query($conn, $query);
 if (mysqli_num_rows($query_exec) > 0) {
 
 ?>
-
-    <div class="container">
-        <h3>Dashboard</h3>
 
         <div class="content">
             <?php
@@ -34,7 +37,7 @@ if (mysqli_num_rows($query_exec) > 0) {
                 </div>
         <?php
 
-            } 
+            }
         } else {
             echo "<h5>NO DATA FOUND.</h5>";
         }
@@ -42,7 +45,5 @@ if (mysqli_num_rows($query_exec) > 0) {
 
         </div>
     </div>
-
-<!-- inserir nsa páginas CRUD index, regiter, view, edit -->
 
     <?php include('includes/footer.php'); ?>

@@ -4,7 +4,7 @@ include('includes/header.php');
  ?>
 
 <div class="container">
-    <h2>Log-in into your account</h2>
+    <h2 class="title">Log-in into your account</h2>
     <form action="submit">
         <label for="email">E-mail:</label>
         <input type="text" placeholder="Your email" name="email">
