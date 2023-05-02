@@ -18,8 +18,8 @@ function sendemail_verify($username,$email,$verify_token){
     $mail->SMTPAuth   = true; 
                                       //Enable SMTP authentication
     $mail->Host       = 'smtp.office365.com';                     //Set the SMTP server to send through
-    $mail->Username   = 'joaovsatestes@outlook.com';                     //SMTP username
-    $mail->Password   = 'Jo40Vi70r@@';                               //SMTP password
+    $mail->Username   = 'myemail@outlook.com';                     //SMTP username
+    $mail->Password   = 'password';                               //SMTP password
     $mail->SMTPSecure = 'tls';            //Enable implicit TLS encryption
     $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
